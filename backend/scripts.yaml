@@ -1,0 +1,21 @@
+scripts:
+  dev:
+    cmd: server.ts
+    allow:
+      - net
+      - read
+    watch: true
+  start:
+    cmd: server.ts
+    allow:
+      - net
+      - read
+  only-net-dev:
+    cmd: server.ts
+    allow:
+      - net
+    watch: true
+  only-net-start:
+    cmd: server.ts
+    allow:
+      - net
